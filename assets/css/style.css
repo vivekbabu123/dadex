@@ -1,0 +1,1123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Thin.ttf);
+    font-weight: 100;
+}
+
+:root {
+    --dadaex-header-color: #11122f;
+    --dadaex-button-color: #4d67ee;
+    --dadaex-Text-color: #fff;
+    --dadex-table-color: #cacbd3;
+    --dadaex-wrapper-color: #0e5f6f;
+    --dadaex-market-color: #09081a;
+    --dadaex-table-bg: #0d0b30;
+    --dadaex-feature-bg: #282655;
+    --dadaex-wrapper_text: #0ecaf0;
+    --dadaex-community_color: #007ab9;
+    --dadaex-card-color: #382d93;
+    --dadaex-card-content: #1dc5ec;
+
+
+
+
+
+
+}
+
+/* ***************************header nav_bar************************* */
+.Navbar {
+    background-color: var(--dadaex-header-color);
+    display: flex;
+    padding: 16px;
+    font-family: sans-serif;
+    color: white;
+    justify-content: space-between;
+}
+
+.Navbar__Link {
+    padding-right: 30px;
+}
+
+.Navbar__Link p {
+    margin-top: 10px;
+    font-weight: 600;
+}
+.Navbar__Link ul li{
+    list-style: none;
+
+}
+.Navbar__Link ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--dadaex-Text-color);
+
+}
+.Navbar__Items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar__Items--right {
+    margin-left: auto;
+}
+
+.Navbar__Link-toggle {
+    display: none;
+}
+
+.Navbar__Link button {
+    padding: 10px 25px;
+    background-color: var(--dadaex-button-color);
+    border-radius: 18px;
+    border: none;
+}
+
+.Navbar__Link button a {
+    font-size: 16px;
+    text-decoration: none;
+
+    color: var(--dadaex-Text-color);
+}
+
+/* ***************************finish nav_bar************************* */
+/* ***************************Wrapper start************************* */
+
+section {
+    padding: 70px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main_wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    background-image: url(../images/wrapeer-img/top-banner.png);
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper_bitcoin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper_content {
+    color: var(--dadaex-Text-color);
+    margin-bottom: 10px;
+
+
+}
+
+.wrapper_content h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--dadaex-wrapper_text);
+}
+
+
+
+.wrapper_content span {
+    color: var(--dadex-table-color);
+}
+
+.wrapper_content p {
+    color: var(--dadex-table-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+.wrapper_content button {
+    padding: 8px 36px;
+    margin-top: 10px;
+    background-color: var(--dadaex-wrapper_text);
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--dadaex-Text-color) !important;
+    font-weight: 200;
+    letter-spacing: 1px;
+
+}
+
+.wrapper_img img {
+    width: 85%;
+    margin: 0 auto;
+    float: right;
+}
+
+/* ***************************Wrapper finish************************* */
+/* ***************************Table start************************* */
+.market_table {
+    background-color: var(--dadaex-market-color);
+
+}
+
+.market_heading h2 {
+    color: var(--dadex-table-color);
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.table_market {
+    color: var(--dadex-table-color);
+    text-align: center;
+
+}
+
+tr.thead {
+    border-bottom: 1px solid var(--dadex-table-color);
+    text-transform: uppercase;
+}
+
+table,
+th,
+td {
+
+    border-collapse: collapse; 
+    padding: 10px 90px !important;
+    margin-top: 30px;
+    background-color: var(--dadaex-table-bg);
+
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.view-all {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+
+}
+
+.view-all a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--dadaex-wrapper_text);
+    font-weight: 200;
+}
+
+hr {
+    width: 145px;
+    margin: 0 auto;
+    border: 0.5px solid var(--dadaex-wrapper_text);
+
+}
+
+
+/* ***************************Table finish************************* */
+/* ***************************invest& grow start************************* */
+.crypto_inv {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.invest_grow {
+    background-image: url(../images/invest&grow/background.png);
+    min-height: 70vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.invest_crypto {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.invest_heading {
+    margin-bottom: 40px;
+}
+
+.invest_heading h2 {
+    text-align: center;
+    color: var(--dadaex-Text-color);
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+
+
+.main_invest {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.invest_content h4 {
+    color: var(--dadex-table-color);
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+
+.invest_content p {
+    color: var(--dadex-table-color);
+    font-size: 16px;
+}
+
+.invest_img img {
+    width: 100%;
+    margin: 0 auto;
+    float: right;
+
+}
+
+/* ***************************invest& grow finish************************* */
+/* ***************************Multiple buy start************************* */
+.Multiple_crypto {
+    background-color: var(--dadaex-market-color);
+}
+
+
+.multiple_heading h2 {
+    text-align: center;
+    color: var(--dadaex-Text-color);
+    font-weight: 300;
+}
+
+.main_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+
+.visit_content h2 {
+    font-size: 1.2rem;;
+    color: var(--dadaex-card-content);
+    font-weight: 400;
+}
+
+.visit_content button {
+    padding: 10px 40px;
+    background-color: var(--dadaex-wrapper_text);
+    color: var(--dadaex-Text-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+}
+
+.visit_card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--dadaex-Text-color);
+    width: 650px;
+    background-color: var(--dadaex-card-color);
+    padding: 35px 30px;
+
+}
+
+.visit_content p {
+    color: var(--dadex-table-color);
+    margin-bottom: 10px;
+    font-weight: 300;
+
+}
+
+.multiple_card {
+    margin-right: 20px;
+    background-color: var(--dadaex-table-bg);
+
+}
+
+.p2p_card {
+    background-color: var(--dadaex-table-bg);
+}
+
+.P2p_content h2 {
+    color: var(--dadaex-card-content);
+    font-weight: 400;
+    font-size: 1.2rem;
+
+}
+
+.P2p_content p {
+    color: var(--dadex-table-color);
+    margin-top: 10px;
+    font-weight: 300;
+
+}
+
+.P2p_content button {
+    padding: 10px 40px;
+    background-color: var(--dadaex-wrapper_text);
+    color: var(--dadaex-Text-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    margin-top: 10px;
+
+}
+
+/* ***************************Multiple buy finish************************* */
+/* ***************************features start************************* */
+.all_feature {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Features {
+    background-color: var(--dadaex-feature-bg);
+}
+
+.features_heading {
+    text-align: center;
+    color: var(--dadex-table-color);
+    margin-bottom: 40px;
+
+}
+
+.features_heading h2 {
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--dadaex-Text-color);
+}
+
+.features_main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Exchange {
+    text-align: center;
+
+}
+
+.Exchange h2 {
+    margin: 15px 0;
+    font-weight: 400;
+    color: var(--dadaex-Text-color);
+    font-size: 18px;
+}
+
+.Exchange p {
+    margin-bottom: 50px;
+    padding: 0 60px;
+    color: var(--dadex-table-color);
+}
+
+
+/* ***************************features finish************************* */
+/* ***************************Community start************************* */
+.Community {
+    background-color: var(--dadaex-market-color);
+}
+.Main_Community {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Community_heading {
+    text-align: center;
+    color: var(--dadaex-Text-color);
+}
+
+.Community_heading h2 {
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.community_content h3 {
+    color: var(--dadaex-Text-color);
+    font-weight: 400;
+    margin-bottom: 40px;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+.icon_com {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.twitter_icon {
+    padding: 10px 25px;
+}
+
+.twitter_icon button {
+    padding: 10px 0;
+    background-color: var(--dadaex-community_color);
+    border-radius: 10px;
+    min-width: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.twitter_icon button span {
+    color: var(--dadex-table-color);
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.telegram_icon button span {
+    color: var(--dadex-table-color);
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.telegram_icon button {
+    padding: 10px 0;
+    background-color: var(--dadaex-community_color);
+    border-radius: 10px;
+    min-width: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.facebook_icon {
+    padding: 10px 25px;
+
+}
+
+.facebook_icon button {
+    padding: 10px 0;
+    background-color: var(--dadaex-community_color);
+    border-radius: 10px;
+    min-width: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.facebook_icon button span {
+    color: var(--dadex-table-color);
+    font-size: 1rem;
+    margin-left: 10px;
+
+
+}
+
+.link_icon button {
+    padding: 10px 0;
+    background-color: var(--dadaex-community_color);
+    border-radius: 10px;
+    min-width: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.link_icon button span {
+    color: var(--dadex-table-color);
+    font-size: 1rem;
+    margin-left: 10px;
+    position: relative;
+     top:3px; 
+
+
+}
+
+/* ***************************community finish************************* */
+
+/* ***************************start footer************************* */
+footer {
+    padding: 70px 0;
+}
+
+.footer_main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer_DADAxc {
+    background-color: var(--dadaex-table-bg);
+}
+
+.img_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_app {
+    margin-right: 20px;
+}
+
+.Footer_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_column {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+
+}
+
+.footer_widget h4 {
+    color: var(--dadaex-Text-color);
+    font-weight: 400;
+}
+
+.footer_widget ul li {
+    list-style: none;
+    padding: 7px 0;
+    font-weight: 300;
+
+}
+
+.footer_widget ul li a {
+    text-decoration: none;
+    color: var(--dadex-table-color);
+
+}
+
+/* ***************************finish footer************************* */
+
+/* **************************start media Query************************* */
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+
+    .wrapper_content h1 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .wrapper_content button {
+        padding: 8px 25px;
+        font-size: 1rem;
+    }
+
+    .wrapper_content {
+        color: var(--dadaex-Text-color);
+        margin-bottom: 10px;
+        color: var(--dadaex-wrapper-color);
+
+    }
+
+    .visit_card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: var(--dadaex-Text-color);
+     width: 490px !important;
+    }
+
+
+    .invest_content {
+        margin-left: 10px;
+    }
+
+    .invest_img img {
+        width: 100%;
+        margin: 0 auto;
+        float: left;
+    }
+
+    .table,
+    th,
+    td {
+
+        border-collapse: collapse;
+        padding: 10px 75px !important;
+        margin-top: 30px;
+        background-color: var(--dadaex-table-bg);
+    }
+    .invest_heading h2 {
+        text-align: center;
+        color: var(--dadaex-Text-color);
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    .community_img img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .Exchange p {
+        margin-bottom: 50px;
+        padding: 0 30px;
+    }
+
+
+}
+
+@media all and (min-width: 992px) and (max-width: 1024px) {
+    .wrapper_content h1 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .wrapper_content button {
+        padding: 8px 25px;
+        font-size: 1rem;
+    }
+
+    .table,
+    th,
+    td {
+
+        border-collapse: collapse;
+        padding: 10px 45px !important;
+        margin-top: 30px;
+        background-color: var(--dadaex-table-bg);
+
+    }
+
+    .visit_card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: var(--dadaex-Text-color);
+        width: 470px !important;
+
+    }
+ .community_content h3 {
+        color: var(--dadex-table-color);
+        font-weight: 400;
+        margin-bottom: 40px;
+        font-size: 19px;
+    } 
+
+    .community_img img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+    .wrapper_content h1 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .wrapper_content button {
+        padding: 8px 25px;
+        font-size: 1rem;
+
+    }
+
+
+    .table,
+    th,
+    td {
+
+        border-collapse: collapse;
+        padding: 10px 50px !important;
+        margin-top: 30px;
+        background-color: var(--dadaex-table-bg);
+
+    }
+
+
+
+    .wrapper_img img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .invest_content {
+        margin-left: 10px;
+    }
+
+    .invest_img img {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .main_card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .multiple_card {
+         margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .features_main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .invest_heading h2 {
+        text-align: center;
+        color: var(--dadaex-Text-color);
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+    .main_invest {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+ .community_content h3 {
+        color: var(--dadex-table-color);
+        font-weight: 400;
+        margin-bottom: 40px;
+        font-size: 19px;
+    } 
+
+
+    .Main_Community {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer_column {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+
+    }
+
+    .footer_widget ul li {
+        list-style: none;
+        padding: 7px 10px;
+    }
+
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+
+    .Navbar__Items,
+    .Navbar {
+        flex-direction: column;
+    }
+
+    .Navbar__Items {
+        display: none;
+        align-items: baseline;
+    }
+
+    .Navbar__Items--right {
+        margin-left: 0;
+    }
+
+    .Navbar__ToggleShow {
+        display: flex;
+    }
+
+    .Navbar__Link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .Navbar__Link button {
+
+        margin-top: 10px;
+    }
+
+    .wrapper_bitcoin {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .wrapper_content {
+        color: var(--dadaex-Text-color);
+        margin-bottom: 10px;
+        color: var(--dadaex-wrapper-color);
+        margin-bottom: 30px;
+
+    }
+
+    .wrapper_content h1 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .wrapper_content p {
+        color: var(--dadaex-Text-color);
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+
+    .wrapper_content button {
+        padding: 8px 20px;
+        margin-top: 10px;
+        color: var(--dadaex-Text-color);
+        border-radius: 10px;
+        font-size: 1rem;
+      
+        
+    }
+
+    .wrapper_img img {
+        width: 100%;
+        margin: 0 auto;
+
+
+    }
+
+    .crypto_inv {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main_invest {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .invest_heading h2 {
+        text-align: center;
+        color: var(--dadaex-Text-color);
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .invest_content h4 {
+        font-size: 18px;
+    }
+
+    .invest_content p {
+        color: var(--dadaex-Text-color);
+        font-size: 15px;
+    }
+
+    .invest_img img {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .main_card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .multiple_card {
+        margin-right: 0px; 
+         margin-bottom: 20px; 
+    }
+    .table_market {
+        color: var(--dadex-table-color);
+        text-align: center;
+        overflow: scroll;
+    }
+
+    table,
+    th,
+    td {
+        border-collapse: collapse;
+        margin-top: 30px;
+        background-color: var(--dadaex-table-bg);
+    }
+
+    .features_main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Main_Community {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .twitter_icon button {
+        padding: 10px 0;
+        background-color: var(--dadaex-community_color);
+        border-radius: 10px;
+        min-width: 120px;
+
+    }
+
+    .Exchange p {
+        margin-bottom: 50px;
+        padding: 0 30px;
+    }
+
+    .visit_card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        flex-direction: column;
+        width: 250px !important;
+    }
+
+    .visit_content button {
+        padding: 10px 15px !important;
+
+    }
+
+    .P2p_content button {
+        padding: 10px 15px;
+    }
+
+    .Community_heading h2 {
+        font-weight: 500;
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+     .community_content h3 {
+        color: var(--dadaex-Text-color);
+        font-weight: 400;
+    
+    }
+
+    .telegram_icon button {
+        padding: 10px 0;
+        background-color: var(--dadaex-community_color);
+        border-radius: 10px;
+        min-width: 120px;
+    }
+
+    .facebook_icon button {
+        padding: 10px 0;
+        background-color: var(--dadaex-community_color);
+        border-radius: 10px;
+        min-width: 120px;
+    }
+
+    .link_icon button {
+        padding: 10px 0;
+        background-color: var(--dadaex-community_color);
+        border-radius: 10px;
+        min-width: 120px;
+
+    }
+
+     .community_content h3 {
+        font-size: 18px;
+        font-weight: 400;
+    } 
+
+    .community_img img {
+        width: 80%;
+        margin: 0 auto;
+        margin-left: 40px;
+    }
+
+    .Footer_heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img_footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer_column {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 25px;
+        flex-direction: column;
+        margin-left: 25px;
+    }
+
+}
+
+/* **************************finish media Query************************* */
